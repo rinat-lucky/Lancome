@@ -1,0 +1,11 @@
+.technology {
+    padding: 15px 0 95px 0;
+    &__description {
+        @include descr;
+        margin-top: 20px;
+        width: 550px;
+    }
+    img {
+        margin-top: 10px;
+    }
+}

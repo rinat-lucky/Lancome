@@ -1,5 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/stylesheet';
+@import 'base/mixins';
 
 * {
     font-family: 'Helvetica', 'Graphik LCG', 'Arial', sans-serif;
@@ -9,7 +10,6 @@
 
 html {
     box-sizing: border-box;
-    // overflow-x: hidden;
 }
 
 .container {
@@ -17,6 +17,26 @@ html {
     margin: 0 auto;
     &_mobile {
         width: 280px;
+    }
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 54px;
+    color: black;
+    &_mini {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.4px;
+    }
+    &_maxi {
+        font-size: 35px;
+        line-height: 42px;
+        width: 450px;
+        margin: 10px auto 0 auto;
     }
 }
 

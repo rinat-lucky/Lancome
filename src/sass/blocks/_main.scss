@@ -6,22 +6,11 @@
     }
     &__banner {
         display: block;
-        margin: 33px auto 0 auto;
-    }
-    &__title {
-        margin-top: 25px;
-        text-align: center;
-        font-weight: 500;
-        font-size: 45px;
-        line-height: 54px;
-        color: black;
+        margin: 33px auto 25px auto;
     }
     &__description {
         margin-top: 15px;
-        text-align: center;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 28px;
+        @include descr;
     }
     &__button {
         display: block;

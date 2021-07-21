@@ -1,0 +1,12 @@
+.price {
+    &__description {
+        @include descr;
+        margin-top: 10px;
+        width: 550px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+}
