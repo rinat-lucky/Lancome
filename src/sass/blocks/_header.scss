@@ -13,7 +13,7 @@
             line-height: 15px;
         }
         &-item a {
-            color: black;
+            color: #000000;
             text-decoration: none;
             font-family: "Graphik LCG";
             font-weight: 500;
@@ -22,13 +22,13 @@
             height: 100%;
             padding-bottom: 3px;
             &:hover {
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid #000000;
             }
         }
         &-item .sale {
-            color: #F10D48;
+            color: #f10d48;
             &:hover {
-                border-bottom: 1px solid #F10D48;
+                border-bottom: 1px solid #f10d48;
             }
         }
     }

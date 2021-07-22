@@ -17,26 +17,28 @@
         margin: 30px auto 0 auto;
         width: 393px;
         height: 50px;
-        background-color: black;
+        background-color: #000000;
         border-style: none;
-        &:hover {
-            box-shadow: 0 0 8px 2px black;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            color: #ffffff;
+            text-decoration: none;
+            font-family: "HelveticaNeue";
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            &:hover {
+                color: #000000;
+                background-color: #ffffff;
+                border: 2px solid #000000;
+            }
         }
-    }
-    &__button a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: 100%;
-        height: 100%;
-        color: white;
-        text-decoration: none;
-        font-family: "HelveticaNeue";
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 1.4px;
-        text-transform: uppercase;
     }
 }

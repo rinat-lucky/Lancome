@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    
     <header>
         <div class="container">
             <div class="header">
@@ -28,7 +27,6 @@
                 <a href="#" class="header__logo">
                     <img src="icons/logo_golden.svg" alt="golden_apple_logo">
                 </a>
-        
             </div>
         </div>
     </header>
@@ -40,7 +38,7 @@
             <div class="container">
                 <h1 class="title">IDÔLE - АРОМАТ БУДУЩЕГО</h1>
                 <div class="main__description">Каждой женщине, которая не боится быть сильной и&nbsp;решительной, которая следует по пути оптимизма и&nbsp;уверенности, Lancôme посвящает Idôle.</div>
-                <button class="main__button"><a href="#">купить новинку</a></button>
+                <button data-modal class="main__button"><a href="#">купить новинку</a></button>
             </div>
         </section>
 
@@ -59,35 +57,101 @@
                 <div class="title title_maxi">неординарность и&nbsp;смелость</div>
                 <div class="price__description">Чистые ноты нового аромата Idôle раскрываются <br> на обнаженной коже через цветочную дымку, где в главной роли выступает роза из Испарты.</div>
                 <div class="price__items">
+
                     <div class="price__item">
                         <img src="img/lancome1.jpg" alt="lancome_aroma">
-
+                        <div class="price__wrapper price__wrapper_flex-end">
+                            <div class="price__category">парфюмерная вода</div>
+                            <div class="price__name">LANCÔME Idôle / <span>50 мл</span></div>
+                            <div class="price__values">
+                                <div class="price__value">6 390 &#8381;</div>
+                                <div class="price__value price__value_old">8 520 &#8381;</div>
+                            </div>
+                            <button data-modal class="price__button">
+                                <a href="#">купить аромат 
+                                    <img src="icons/arrow-right.svg" alt="arrow-right">
+                                </a>
+                            </button>
+                        </div>
                     </div>
+
                     <div class="price__item">
                         <img src="img/lancome2.jpg" alt="lancome_aroma">
-                        
+                        <div class="price__wrapper">
+                            <div class="price__category">парфюмерная вода</div>
+                            <div class="price__name">LANCÔME Idôle / <span>25 мл</span></div>
+                            <div class="price__values">
+                                <div class="price__value">3 997 &#8381;</div>
+                                <div class="price__value price__value_old">5 330 &#8381;</div>
+                            </div>
+                            <button data-modal class="price__button">
+                                <a href="#">купить аромат 
+                                    <img src="icons/arrow-right.svg" alt="arrow-right">
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
         <section class="promo">
-           
+           <div class="promo__wrapper">
+                <div class="promo__header">промокод</div>
+                <div class="promo__promocode">summer</div>
+                <div class="promo__description">дарим 300 ₽ при оформлении заказа от 3000 ₽* без учёта доставки</div>
+                <button class="promo__button">
+                    <a href="#">применить промо-код</a>
+                </button>
+                <div class="promo__addition">* Код действителен после применения скидки</div>
+           </div>
         </section>
-
     </main>
 
-
-
     <footer class="footer">
+        <div class="container">
+            <div class="footer__logos">
 
+                <div class="footer__socials">
+                    <a href="#"><img src="icons/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="icons/ok.svg" alt="odnoklassniki"></a>
+                    <a href="#"><img src="icons/vk.svg" alt="vk"></a>
+                    <a href="#"><img src="icons/instagram.svg" alt="instagram"></a>
+                </div>
+
+                <div class="footer__apps">
+                    <a href="#"><img src="icons/appstore.svg" alt="app_store"></a>
+                    <a href="#"><img src="icons/google_play.svg" alt="google_play"></a>
+                </div>
+            </div>
+
+            <div class="footer__additions">
+                <div class="footer__support">
+                    <a href="tel:+74951234567" class="footer__support-number">+7 (495) 123-45-67</a>
+                    <div class="footer__support-text">Служба поддержки</div>
+                </div>
+
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Условия пользовательского соглашения</a>
+                    <a href="#" class="footer__link">Отписаться от рассылки</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-
-
-
-
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно скорее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш телефон" name="phone" type="phone" class="modal__input">
+                    <button class="modal__button">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
