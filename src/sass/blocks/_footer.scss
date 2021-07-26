@@ -6,6 +6,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__socials {
         display: flex;
@@ -24,6 +25,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__support {
         display: flex;
@@ -35,7 +37,7 @@
             color: #ffffff;
             font-family: "Graphik LCG";
             font-size: 14px;
-            font-weight: 5s00;
+            font-weight: 500;
             line-height: 16px;
             &:hover {
                 text-decoration: none;
@@ -69,5 +71,8 @@
             text-decoration: none;
             color: #ffffff;
         }
+    }
+    hr {
+        display: none;
     }
 }
